@@ -60,19 +60,21 @@ export default ({refresh}:any) => {
         }
         employeeDetail.push(payload);
         localStorage.setItem('employeeDetail', JSON.stringify(employeeDetail));
-        
+
         setEmployeeName('');
         setEmployeeDesignation('');
         setEmployeeDetails('');
         setImageUrl('');
         setIsModalVisible(false); 
         refresh();
+        message.success('Successfully Submitted');
     };
-   
 
     const handleCancel = () => {
       setEmployeeName('');
       setEmployeeDesignation('');
+      setImageUrl('');
+      setLoading(false);
       setEmployeeDetails('');
       setIsModalVisible(false);
     };
@@ -94,7 +96,7 @@ export default ({refresh}:any) => {
         });
       }
     };
-  
+
     const uploadButton = (
       <div>
         {loading ? <LoadingOutlined /> : <PlusOutlined />}

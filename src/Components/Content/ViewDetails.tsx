@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Col, Row, Modal, Input, Button } from "antd";
+import { Col, Row, Modal, Input, Button, message } from "antd";
 
 const { TextArea } = Input;
 
@@ -48,6 +48,7 @@ export default function ViewDetails(props:cardDetailsProps) {
     localStorage.setItem('employeeDetail', JSON.stringify(data));
     props.refresh();
     setIsModalVisible(false); 
+    message.success('Successfully Updated');
   };
 
 

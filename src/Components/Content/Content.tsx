@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "antd/dist/antd.css";
 import { Layout } from "antd";
 import { Col, Row } from "antd";
-import { Card, Button } from "antd";
+import { Card, Button, message } from "antd";
 import "../Dashboard/Sidebar.css";
 import ViewDetails from "./ViewDetails";
 
@@ -41,7 +41,8 @@ export default (props:cardDetailsProps) => {
     }
     localStorage.setItem("employeeDetail", JSON.stringify(employeeDetail));
     // console.log(items);  
-    props.refresh();        
+    props.refresh();    
+    message.success('Successfully Card Deleted');    
   }
   
 return (
