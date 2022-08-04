@@ -28,13 +28,15 @@ export default () => {
     console.log('Hai Search: ',Data);
     setCardData(Data);
   }
+
   return (
     <div>
       <Layout>
         <Sidenav />
         <Layout>
+          <div className="main_header">
               <HeaderPart refresh={refresh} searchCardCallBack={searchCardCallBack}/>
-
+          </div>
               <div className="contentGrid">
                 {cardData.map((card: any) => {
                   //console.log(card.title);

@@ -67,7 +67,7 @@ export default ({refresh}:any) => {
         setImageUrl('');
         setIsModalVisible(false); 
         refresh();
-        message.success('Successfully Submitted');
+        message.success('Card Added Successfully');
     };
 
     const handleCancel = () => {
@@ -109,7 +109,7 @@ export default ({refresh}:any) => {
 
 
   return (
-    <Col span={6} className="midright">
+    <Col span={6}className="midright">
             <Button type="primary" className="headright" onClick={showModal}>Create Workflow</Button>
 
                 <Modal title="Setup Employee" visible={isModalVisible} onCancel={handleCancel} footer={null}>

@@ -6,7 +6,6 @@ import CreateWorkflow from './CreateWorkflow';
 
 const { Header } = Layout;
 
-
 // function HeaderPart({refresh}) {
 
 // HeaderPart Main function 
@@ -14,7 +13,7 @@ const { Header } = Layout;
 
       return (
         <Header>
-            <Row>
+            <Row className="rowhead">
             <Col span={6}>
                 <p className="lefthead">Workflow</p>
             </Col>

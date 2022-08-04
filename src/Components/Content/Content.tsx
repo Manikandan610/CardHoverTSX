@@ -42,7 +42,7 @@ export default (props:cardDetailsProps) => {
     localStorage.setItem("employeeDetail", JSON.stringify(employeeDetail));
     // console.log(items);  
     props.refresh();    
-    message.success('Successfully Card Deleted');    
+    message.success(' Card Deleted Successfully');    
   }
   
 return (

@@ -29,7 +29,7 @@ export default ({searchCardCallBack}:any) => {
 
   return (
   
-        <Col span={12} className="midhead">
+        <Col span={12}className="midhead">
             <Input placeholder='Search a workflow' value={search} onChange={handleSearchChange} prefix={<SearchOutlined />} />
             {/* {filtered.map((card:any) => {
                 return (

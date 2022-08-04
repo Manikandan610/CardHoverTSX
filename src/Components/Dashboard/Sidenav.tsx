@@ -9,8 +9,9 @@ const { Sider } = Layout;
 export default () => {
   return (
     <Sider className="SideBar" 
-    // breakpoint="lg"
-    // collapsedWidth="0"
+    breakpoint="sm"
+    collapsedWidth="0"
+    width={61}
     // onBreakpoint={broken => {
     //   console.log(broken);
     // }}
