@@ -19,7 +19,6 @@ export default ({searchCardCallBack}:any) => {
                     : employeeDetail.filter((card:any) =>
                         card.title.toLowerCase().includes(searchValue.toLowerCase())
                         )
-          //setFiltered(filteredValue);
           searchCardCallBack(filteredValue);  
           }
         else if(searchValue.length<3){
